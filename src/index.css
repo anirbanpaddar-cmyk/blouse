@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-cinzel: 'Cinzel', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-bengali: 'Hind Siliguri', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FDFBF7;
+    color: #261E1E;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: var(--font-serif);
+  }
+
+  .font-cinzel {
+    font-family: var(--font-cinzel);
+  }
+
+  .font-bengali {
+    font-family: var(--font-bengali);
+  }
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F3EA;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4A468;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #74132B;
+}
+
+/* Bengali paisley & alpona inspired subtle gold texture */
+.alpona-border {
+  background-image: radial-gradient(#CF9E38 0.75px, transparent 0.75px);
+  background-size: 14px 14px;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #CF9E38 0%, #F5DE9C 50%, #B88628 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.maroon-gradient-bg {
+  background: linear-gradient(135deg, #4A0B1A 0%, #681426 50%, #300611 100%);
+}
+
